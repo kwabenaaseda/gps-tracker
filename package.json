@@ -16,7 +16,8 @@
     "start": "bun run src/server.ts",
     "dev": "bun run src/server.ts --watch",
     "migrate": "bun run src/db/migrate.ts",
-    "test": "bun test"
+    "test": "bun test",
+    "build":"bun build src/server.ts --outdir dist"
   },
   "dependencies": {
     "cors": "^2.8.6",
