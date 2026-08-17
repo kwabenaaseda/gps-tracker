@@ -13,11 +13,11 @@
     "typescript": "^5"
   },
   "scripts": {
-    "start": "bun run src/server.ts",
+    "start": "bun dist/server.js",
     "dev": "bun run src/server.ts --watch",
     "migrate": "bun run src/db/migrate.ts",
     "test": "bun test",
-    "build":"bun build src/server.ts --outdir dist"
+    "build":"tsc"
   },
   "dependencies": {
     "cors": "^2.8.6",
